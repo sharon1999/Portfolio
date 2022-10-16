@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 200; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -209,8 +209,8 @@ img {
   font-weight: var(--font-medium);
 }
 
-.nav__link:hover(){
-  columns: var(--first-color);
+.nav__link:hover{
+  color: var(--first-color);
 }
 .nav__icon{
   font-size: 1.2rem;
@@ -238,6 +238,7 @@ img {
 /*==================== HOME ====================*/
 .home__container{
   gap:1rem;
+  margin-left: 10px;
 
 }
 .home__content{
@@ -283,6 +284,9 @@ img {
 .home__description{
   margin-bottom: var(--mb-2);
 }
+.home__scroll{
+  display: none;
+}
 .home__scroll-button{
   color: var(--first-color);
   transition: .3s;
@@ -305,7 +309,27 @@ img {
   font-size: 1.25rem;
 }
 /*==================== BUTTONS ====================*/
+.button{
+  display: inline;
+  background-color:var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+.button__icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
 /*==================== ABOUT ====================*/
 
 /*==================== SKILLS ====================*/
