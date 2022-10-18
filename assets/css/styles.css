@@ -85,7 +85,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0 20px var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -410,6 +410,10 @@ img {
   margin-left: auto;
   transition: 0.4s;
 }
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
 .skills__title {
   display: flex;
   justify-content: space-between;
@@ -447,6 +451,20 @@ img {
 }
 .skills__react{
   width: 85%;
+}
+
+.skills__close .skills__list{
+  height: 0;
+  overflow:hidden ;
+}
+
+.skills__open{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
 
