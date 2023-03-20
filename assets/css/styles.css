@@ -1083,9 +1083,9 @@ img {
     font-size: large
 
   }
-  .container{
+  /* .container{
     margin: 10px;
-  }
+  } */
   .nav__btns{
     position: absolute;
     right: 0;
